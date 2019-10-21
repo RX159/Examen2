@@ -61,17 +61,17 @@ const metID = function(ID, callback)
 			}
 			else
 			{	
-				if(data.constituents[0].name)
+				if(data.constituents)
 				{
-					var constituents = data.constituents[0].name
+					var cons = data.constituents[0].name
 				}
 				else
 				{
-					var constituents = undefined
+					var cons = "None"
 				}
 
 				const info = {
-				artist : constituents,
+				artist : cons,
 				title: data.title,
 				year: data.objectEndDate,
 				technique: data.medium,
