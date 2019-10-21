@@ -77,6 +77,15 @@ app.get('/met', function(req,res)
 						error: error
 					})
 			}
+
+			if(response == 0)
+			{
+				res.send({
+						error: "No hubo resultados de esa busqueda"
+					})
+
+			}
+
 			MET.metID(response, function(error,response)
 			{
 

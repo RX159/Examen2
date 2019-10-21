@@ -27,6 +27,11 @@ const met = function(busqueda, callback)
 			else
 			{	
 				//console.log(data)
+				if(data.objectIDs == undefined)
+				{
+					callback(undefined, 0)
+				}
+
 				callback(undefined, data.objectIDs[1])
 			}
 		}
