@@ -13,7 +13,7 @@ app.get('', function(req, res){
 	res.send({
 		greeting: 'Hola, bienvenid@ al Examen 2 de Ricardo Reyes A01281564',
 		students: 'con el link /students/[Matricula], puede buscar mi matricula y recibir mi info',
-		met : "con la ruta /met/[Codsa] podra buscar objetos dentro del museo del MET",
+		met : "con la ruta /met/?search=[Cosa] podra buscar objetos dentro del museo del MET",
 		porfavor: 'Diviertase y pongame 100' 
 	})
 
