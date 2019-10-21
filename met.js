@@ -32,7 +32,7 @@ const met = function(busqueda, callback)
 					callback(undefined, 0)
 				}
 
-				callback(undefined, data.objectIDs[1])
+				callback(undefined, data.objectIDs[0])
 			}
 		}
 	})
